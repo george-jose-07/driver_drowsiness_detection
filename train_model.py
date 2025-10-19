@@ -156,16 +156,6 @@ def load_dataset(dataset_path, img_size):
 # 2. BUILD CNN MODEL
 # ===========================
 def build_cnn_model(input_shape, num_classes):
-    """
-    Build a Convolutional Neural Network for binary classification.
-    
-    Args:
-        input_shape: Shape of input images (height, width, channels)
-        num_classes: Number of output classes
-    
-    Returns:
-        Compiled Keras model
-    """
     model = models.Sequential([
         # First Convolutional Block
         layers.Conv2D(32, (3, 3), activation='relu', input_shape=input_shape, padding='same'),
