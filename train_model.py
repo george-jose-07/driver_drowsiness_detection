@@ -194,19 +194,6 @@ def build_cnn_model(input_shape, num_classes):
 # 3. TRAIN MODEL
 # ===========================
 def train_model(model, X_train, y_train, X_test, y_test, epochs, batch_size):
-    """
-    Train the CNN model with callbacks for early stopping and learning rate reduction.
-    
-    Args:
-        model: Keras model to train
-        X_train, y_train: Training data and labels
-        X_test, y_test: Test data and labels
-        epochs: Number of training epochs
-        batch_size: Batch size for training
-    
-    Returns:
-        history: Training history object
-    """
     # Compile model
     model.compile(
         optimizer=keras.optimizers.Adam(learning_rate=LEARNING_RATE),
@@ -319,9 +306,6 @@ def plot_training_history(history):
     print("Training history saved as 'training_history.png'")
 
 
-# ===========================
-# MAIN EXECUTION
-# ===========================
 if __name__ == "__main__":
     print("="*60)
     print("DRIVER DROWSINESS DETECTION - MODEL TRAINING")
@@ -358,9 +342,9 @@ if __name__ == "__main__":
     # Print device being used for training
     print("\n" + "="*60)
     if gpu_available:
-        print("🎯 TRAINING ON: GPU")
+        print("TRAINING ON: GPU")
     else:
-        print("🎯 TRAINING ON: CPU")
+        print("TRAINING ON: CPU")
     print("="*60 + "\n")
     
     # Train model
