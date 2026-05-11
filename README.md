@@ -1,4 +1,3 @@
-```markdown
 # Driver Drowsiness Detection System
 
 This repository contains the implementation of a real-time deep learning system designed to monitor driver alertness. The system uses a Convolutional Neural Network (CNN) to analyze facial frames and classify them as "Alert" or "Drowsy". It is specifically optimized for deployment on edge devices like the Raspberry Pi.
@@ -65,7 +64,3 @@ The system is optimized for real-time inference on the **Raspberry Pi Zero 2 W**
 * **Test Accuracy**: Achieved ~99.99% accuracy on the validation set.
 * **Model Size**: The TFLite model is approximately 2.2 MB.
 * **Performance**: Optimized for sub-100ms inference, providing immediate alerting capabilities when fatigue is detected.
-
-```
-
-```
