@@ -1,4 +1,3 @@
-streamlit
 opencv-python-headless
 numpy
 tensorflow
@@ -6,4 +5,4 @@ Pillow
 pygame
 dlib
 scipy
-cmake
+streamlit
