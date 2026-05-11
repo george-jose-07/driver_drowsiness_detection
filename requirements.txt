@@ -1,7 +1,9 @@
-tensorflow
-numpy
+streamlit
 opencv-python-headless
-scikit-learn
-matplotlib
-seaborn
+numpy
+tensorflow
+Pillow
 pygame
+dlib
+scipy
+cmake
